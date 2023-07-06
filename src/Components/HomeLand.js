@@ -6,10 +6,11 @@ import Resume from "./Stock/Resume PNG.jpg"
 import { gsap } from 'gsap'
 import { useLayoutEffect, useEffect, useRef } from 'react'
 import { ScrollTrigger, CustomEase, Power3 } from 'gsap/all'
-gsap.registerPlugin(ScrollTrigger)
-gsap.registerPlugin(CustomEase);
+
 import fman from "./Stock/feedback.png"
 import AnyFeedback from './AnyFeedback'
+gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(CustomEase);
 
 const virtualPrj = [
   {
