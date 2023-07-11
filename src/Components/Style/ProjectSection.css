@@ -1,0 +1,73 @@
+.projectSectionWindow {
+    /* width: 100%; */
+    /* height: 100vh; */
+    background-color: black;
+    /* opacity: 0.5; */
+    height: 100vh;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+    z-index: 5;
+}
+
+.projectHead h1{
+    color: white;
+}
+.projectHead{
+    padding-top: 3%;
+    /* font-weight: bold; */
+    text-align: center;
+}
+.projectDivSectionCardS{
+    color: white;
+    text-align: left;
+    width: 26%;
+    padding: 1.2%;
+    border-radius: 10px;
+    background-color: #121212;
+}
+.projectImgCard img{
+    width: 100%;
+}
+
+
+.projectNameCard h2 {
+    position: relative;
+    z-index: 6;
+    top: -19px;
+}
+/* .projfectImgCardBlacker{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+} */
+
+.completeCardSection{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.projectSectionWindow {
+    transform: translateY(101vh);
+}
+
+.closeTabOut{
+    color: white;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.leetcodeSvg{
+    width: 8%;
+}

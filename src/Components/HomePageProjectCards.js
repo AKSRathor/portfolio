@@ -32,8 +32,8 @@ const HomePageProjectCards = (props) => {
   return (
     <div className='cardProjectVirtual'>
         <div className="projectCardHeading" style={{fontWeight:"bold"}}>{props.name}</div>
-        <div className="ProjectCardDesc">{props.desc}</div>
-        <div className="visitDivCard"><button className="visitNowProject">Visit</button></div>
+        <div className="ProjectCardDesc"><p>{props.desc}</p></div>
+        <div className="visitDivCard"><a href={props.siteLink} target='_blank'><button className="visitNowProject">Visit</button></a></div>
     </div>
   )
 }
