@@ -9,6 +9,7 @@ import { ScrollTrigger, CustomEase, Power3 } from 'gsap/all'
 import fman from "./Stock/feedback.png"
 import AnyFeedback from './AnyFeedback'
 import ProjectSection from './ProjectSection'
+import HireMeForm from './HireMeForm'
 gsap.registerPlugin(ScrollTrigger)
 gsap.registerPlugin(CustomEase);
 
@@ -238,11 +239,22 @@ const HomeLand = () => {
       ease: "power1.inOut"
     })
   }
+  const hireMeRef = useRef()
+
+  const handleOnHireMeClick = ()=>{
+    hireMeRef.current.style.display = "flex"
+    gsap.to(".hireMeContents",{
+      opacity:1,
+      rotateX:0,
+      duration:0.2
+  })
+  }
 
 
   return (
     <div>
       <ProjectSection />
+      <HireMeForm hireMeRef = {hireMeRef}/>
 
       <div className="feedBackSide">
         <div className="feedBackMan">
@@ -276,7 +288,7 @@ const HomeLand = () => {
 
           </div>
           <div className="LandPageBtns">
-            <div className="hireMeBtnDiv"><button onMouseOver={handleOnHireOver} onMouseOut={handleOnHireOut} className='landPageBtn hiremeLandPageBtn'>Hire me <i className="fa-solid fa-arrow-right hireArrow"></i></button></div>
+            <div className="hireMeBtnDiv"><button onMouseOver={handleOnHireOver} onClick={handleOnHireMeClick} onMouseOut={handleOnHireOut} className='landPageBtn hiremeLandPageBtn'>Hire me <i className="fa-solid fa-arrow-right hireArrow"></i></button></div>
             <div className="DownloadCvLandPageBtnDiv"><button className='landPageBtn downloadLandPageBtn type1'>Download CV</button></div>
           </div>
 
