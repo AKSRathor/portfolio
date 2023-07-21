@@ -44,6 +44,43 @@ const HireMeForm = (props) => {
             const json = await response.json()
             console.log(json)
         }
+        gsap.to(".sendSvg", {
+            scale:10,
+            y:-350,
+            duration:0.6
+        })
+        gsap.to(".sendSvg", {
+            x:1200,
+            delay:0.8
+        })
+        gsap.to(".sendSvg", {
+            rotateZ:10,
+            x:-30,
+            duration:0.1,
+            delay:0.6
+        })
+        gsap.to(".sendSvg", {
+            rotateZ:-10,
+            duration:0.05,
+            delay:0.7
+        })
+        gsap.to(".sendSvg", {
+            rotateZ:0,
+            duration:0.05,
+            delay:0.75
+        })
+        gsap.to(".sendSvg", {
+            x:0,
+            y:0,
+            rotate:0,
+            delay:1.5,
+            scale:1,
+            duration:0
+        })
+        setTimeout(() => {
+            handleToCloseHireWindow()
+            
+        }, 1600);
         sendForm();
     }
 

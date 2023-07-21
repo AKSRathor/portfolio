@@ -1,0 +1,19 @@
+.alertDiv {
+    border-radius: 12px;
+    background-color: rgb(217 247 255);
+    border: 2px solid rgb(0, 165, 211);
+    color: rgb(1, 138, 176);
+    position: fixed;
+    bottom: 4%;
+    
+    padding: auto 11.9%;
+    
+    padding: 1% 6%;
+    
+    z-index: 11;
+    visibility: hidden ;
+}
+.alertOuterDiv{
+    display: flex;
+    justify-content: center;
+}

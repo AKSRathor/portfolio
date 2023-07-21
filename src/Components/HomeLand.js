@@ -4,13 +4,15 @@ import SelfPhoto from "./Stock/portfolioimage.png"
 import HomePageProjectCards from './HomePageProjectCards'
 import Resume from "./Stock/Resume PNG.jpg"
 import { gsap } from 'gsap'
-import { useLayoutEffect, useEffect, useRef } from 'react'
+import { useLayoutEffect, useEffect, useRef, useState } from 'react'
 import { ScrollTrigger, CustomEase, Power3 } from 'gsap/all'
 import fman from "./Stock/feedback.png"
 import AnyFeedback from './AnyFeedback'
 import ProjectSection from './ProjectSection'
 import HireMeForm from './HireMeForm'
+import AlertSection from './AlertSection'
 gsap.registerPlugin(ScrollTrigger)
+
 gsap.registerPlugin(CustomEase);
 
 const virtualPrj = [
@@ -39,6 +41,7 @@ CustomEase.create("custom", "M0,0 C0.01,1.01 0,1 1,1.05");
 
 
 const HomeLand = () => {
+  const [textToAlert, setTextToAlert] = useState("")
 
 
 
@@ -250,9 +253,36 @@ const HomeLand = () => {
   })
   }
 
+  const handleOnShareClick = ()=>{
+    navigator.clipboard.writeText("https://ashurathor.vercel.app/")
+    setTextToAlert("Link Copied")
+    showAlert()
+  }
+  const showAlert =()=>{
+    gsap.to(".alertDiv",{
+      opacity:1,
+      duration:0
+    })
+    gsap.to(".alertDiv",{
+      visibility:"visible",
+      y: -10,
+      duration:1
+    })
+    gsap.to(".alertDiv",{
+      y:0,
+      duration:1,
+      delay:4,
+      opacity:0
+    })
+    gsap.to(".alertDiv",{
+      visibility:"hidden",
+      delay:5.1
+    })
+  }
 
   return (
     <div>
+      <AlertSection textToAlert  = {textToAlert}/>
       <ProjectSection />
       <HireMeForm hireMeRef = {hireMeRef}/>
 
@@ -269,8 +299,8 @@ const HomeLand = () => {
       <div className="navbarPortionLandDiv">
         <div className="emptNav"></div>
         <div className="navBarPortionLand">
-          <div className="callNavSectionDiv"><i class="fa-solid fa-phone"></i></div>
-          <div className="shareNavSectionDiv"><i class="fa-solid fa-share-nodes"></i> </div>
+          <div className="callNavSectionDiv"><a href="mailto:mail.online.ayush@gmail.com"><i class="fa-solid fa-envelope"></i></a></div>
+          <div className="shareNavSectionDiv" onClick={handleOnShareClick}><i class="fa-solid fa-share-nodes"></i> </div>
         </div>
 
       </div>

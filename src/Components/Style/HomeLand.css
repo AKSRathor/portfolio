@@ -73,6 +73,9 @@
 .callNavSectionDiv, .shareNavSectionDiv{
     cursor: pointer;
 }
+.callNavSectionDiv a{
+    color: #232323;
+}
 
 .btnsMedia button{
     cursor: pointer;
