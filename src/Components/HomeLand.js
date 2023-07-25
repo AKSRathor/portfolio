@@ -88,15 +88,72 @@ const HomeLand = () => {
 
     })
 
-    gsap.to(".hiBg", {
-      width: "544px",
-      repeat: -1,
-      duration: 2
-      // yoyo:true
+    if(window.innerWidth >=730){
 
+      gsap.to(".hiBg", {
+        width: "544px",
+        repeat: -1,
+        duration: 2
+        // yoyo:true
+      })
+  
+      gsap.to(".namesideBG", {
+        width: "544px",
+        repeat: -1,
+        duration: 2,
+        delay: 1.5,
+        // yoyo:true
+  
+  
+  
+      })
+    }
+    else if(window.innerWidth>=555){
 
+      gsap.to(".hiBg", {
+        width: "410px",
+        repeat: -1,
+        duration: 2
+        // yoyo:true
+  
+  
+  
+      })
+  
+      gsap.to(".namesideBG", {
+        width: "410px",
+        repeat: -1,
+        duration: 2,
+        delay: 1.5,
+        // yoyo:true
+  
+  
+  
+      })
+    }
 
-    })
+    else{
+      gsap.to(".hiBg", {
+        width: "350px",
+        repeat: -1,
+        duration: 2
+        // yoyo:true
+  
+  
+  
+      })
+  
+      gsap.to(".namesideBG", {
+        width: "350px",
+        repeat: -1,
+        duration: 2,
+        delay: 1.5,
+        // yoyo:true
+  
+  
+  
+      })
+    }
 
     gsap.to(".hiSideLandPage", {
       color: "white",
@@ -105,16 +162,6 @@ const HomeLand = () => {
       // yoyo:true
     })
 
-    gsap.to(".namesideBG", {
-      width: "544px",
-      repeat: -1,
-      duration: 2,
-      delay: 1.5,
-      // yoyo:true
-
-
-
-    })
 
     gsap.to(".nameSideDiv", {
       color: "black",

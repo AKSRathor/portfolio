@@ -5,22 +5,26 @@
     gap: 350px;
     /* align-items: center; */
     width: 100%;
+    flex-wrap: wrap-reverse;
 }
-.photoSide img{
+
+.photoSide img {
     height: 338px;
 }
-.wholeLandPage{
+
+.wholeLandPage {
     height: 90vh;
     display: flex;
     /* align-items: center; */
     width: 100%;
 }
-.nameSide{
+
+.nameSide {
     font-size: 5em;
     font-weight: bold;
 }
 
-.nameWithPhoto{
+.nameWithPhoto {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -42,42 +46,45 @@
     overflow: hidden;
 }
 
-.navBarPortionLand{
+.navBarPortionLand {
     display: flex;
     gap: 50px;
 }
 
-.navbarPortionLandDiv{
+.navbarPortionLandDiv {
     display: grid;
     grid-template-columns: 80% 20%;
     width: 100%;
     padding-top: 5%;
 }
 
-.landPageBtn{
+.landPageBtn {
     font-weight: bold;
     background-color: #60f6ad;
     cursor: pointer;
 }
 
-.downloadLandPageBtn{
+.downloadLandPageBtn {
     background-color: transparent;
     border: 2px solid #60f6ad;
     transition: all ease-out 0.2s;
     /* color: #60f6ad;; */
 }
+
 /* .downloadLandPageBtn:hover{
     background-color: #60f6ad;
 } */
 
-.callNavSectionDiv, .shareNavSectionDiv{
+.callNavSectionDiv,
+.shareNavSectionDiv {
     cursor: pointer;
 }
-.callNavSectionDiv a{
+
+.callNavSectionDiv a {
     color: #232323;
 }
 
-.btnsMedia button{
+.btnsMedia button {
     cursor: pointer;
     width: 150px;
     height: 5vh;
@@ -88,30 +95,32 @@
     border-radius: 5px;
 }
 
-.shareLinkBtn{
+.shareLinkBtn {
     display: flex;
     padding-top: 5%;
     justify-content: center;
     gap: 120px;
 }
-.paraPage2Div{
+
+.paraPage2Div {
     padding-top: 5%;
     display: grid;
     gap: 50px;
     color: white;
     grid-template-columns: 45% 45%;
 }
-.paraPage2LeftPara{
+
+.paraPage2LeftPara {
     /* width: 30%; */
     align-items: right;
     display: flex;
     font-weight: bold;
     font-size: 3.8em;
-    line-height:80%;
+    line-height: 80%;
     justify-content: right;
 }
 
-.paraPage2RightPara{
+.paraPage2RightPara {
     opacity: 0;
     transform: translateX(18px);
     display: flex;
@@ -119,7 +128,7 @@
     align-items: center;
 }
 
-.homePage2{
+.homePage2 {
     background-color: #232323;
 }
 
@@ -130,43 +139,45 @@
     justify-content: center;
 }
 
-.virtualShowPrjHead{
+.virtualShowPrjHead {
     text-align: center;
     color: white;
 }
 
-.virtualShowPrjHead h2{
+.virtualShowPrjHead h2 {
     padding-bottom: 5%;
     padding-top: 7%;
 }
 
-.showMoreCards{
+.showMoreCards {
     padding-bottom: 1%;
     margin: auto;
     text-align: right;
     width: 73%;
     padding-top: 2%;
 }
-.showMoreCardsInside{
+
+.showMoreCardsInside {
     position: relative;
     z-index: 0;
     text-decoration: none;
     color: white;
 }
 
-.resumeImg{
+.resumeImg {
     width: 55%;
     border-radius: 10px;
     border-top: 2px solid white;
 }
-.portfolioSideResumeImg{
+
+.portfolioSideResumeImg {
     background-color: #232323;
     /* display: flex; */
     padding: 3%;
     text-align: center;
 }
 
-#selfPhoto{
+#selfPhoto {
     opacity: 0;
 }
 
@@ -178,7 +189,7 @@
     height: 102px;
 }
 
-.namesideBG{
+.namesideBG {
 
     position: absolute;
     background-color: #60f6ad;
@@ -187,13 +198,14 @@
     height: 112px;
 
 }
-.hiSideLandPage{
+
+.hiSideLandPage {
     /* color: white; */
     z-index: 2;
     position: relative;
 }
 
-.nameSideDiv{
+.nameSideDiv {
 
     color: black;
     z-index: 2;
@@ -201,8 +213,9 @@
 
 }
 
-.myNameIs{
-    color: #60f6ad;;
+.myNameIs {
+    color: #60f6ad;
+    ;
     /* color: white; */
 }
 
@@ -222,10 +235,10 @@
     border-radius: 8px;
     border: 2px solid 60f6ad;
     overflow: hidden;
-  }
-  
-  
-  .type1::after {
+}
+
+
+.type1::after {
     content: "";
     position: absolute;
     left: 0;
@@ -238,42 +251,44 @@
     height: 100px;
     width: 10px;
     z-index: -1;
-  }
-  
+}
 
-  .type1:hover::after {
+
+.type1:hover::after {
     visibility: visible;
     transform: scale(100) translateX(2px);
-  }
+}
 
-  .mediaBtn{
+.mediaBtn {
     transform: scale(0);
-  }
+}
 
-  .paraPage2LeftPara{
+.paraPage2LeftPara {
     opacity: 0;
     transform: translateX(-18px);
-  }
+}
 
 
 
-  @keyframes showMore {   
-  
-      0%{
-          transform: scale(0.5) translateY(-73px);
-      }
-      100%{
-          transform: scale(1) translateY(-35px) translateX(-15px);
-          opacity: 0;
-      }
-  
-  }
-  .showMoreCardsInside::after {
+@keyframes showMore {
+
+    0% {
+        transform: scale(0.5) translateY(-73px);
+    }
+
+    100% {
+        transform: scale(1) translateY(-35px) translateX(-15px);
+        opacity: 0;
+    }
+
+}
+
+.showMoreCardsInside::after {
     content: "";
     position: absolute;
     left: 0;
     top: 0;
-    
+
     /* visibility: visible; */
     /* animation: showMore 0.2s -1 ; */
     animation-name: showMore;
@@ -282,7 +297,7 @@
     animation-iteration-count: infinite;
     /* animation-fill-mode: forwards; */
     background-color: #444444;
-    border-radius: 2px solid #444444 ;
+    border-radius: 2px solid #444444;
     border-radius: 200px;
     height: 100px;
     width: 100px;
@@ -313,7 +328,7 @@
     visibility: hidden;
 }
 
-.AnyFeedbackAsk{
+.AnyFeedbackAsk {
     display: flex;
     opacity: 0;
     transform: translateY(5px);
@@ -329,7 +344,102 @@
     justify-content: center;
 }
 
-.fmanImg{
-    
+.fmanImg {
+
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+@media only screen and (max-width: 1328px) {
+
+    .onlyNameWithPhoto {
+        column-gap: 188px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+
+    .onlyNameWithPhoto {
+        gap: 50px;
+        flex-direction: column-reverse;
+    }
+
+    .photoSide img {
+        height: 200px;
+    }
+
+    .allContain {
+        font-size: 0.8em;
+    }
+
+    .hiBg,
+    .namesideBG {
+        height: 86px;
+    }
+
+    .shareLinkBtn {
+
+        gap: 48px;
+    }
+
+    .btnsMedia button {
+        font-size: 0.7em;
+        width: 95px;
+
+    }
+
+    .virtualShowprj {
+        column-gap: 39px;
+        font-size: 0.8em;
+    }
+
+    .cardProjectVirtual {
+        width: 28% !important;
+
+    }
+
+    .LandPageBtns {
+        justify-content: center;
+        margin: 5% auto;
+    }
+}
+
+
+@media only screen and (max-width: 730px) {
+
+    .shareLinkBtn {
+        flex-wrap: wrap;
+    }
+
+    .virtualShowprj {
+        flex-wrap: wrap;
+        column-gap: 64px;
+        gap: 56px;
+
+    }
+
+    .cardProjectVirtual {
+        width: 38% !important;
+    }
+
+    .paraPage2Div {
+        margin: auto;
+        width: 66%;
+        display: flex;
+        flex-wrap: wrap;
+
+
+    }
+    .resumeImg {
+        width: 97%;
+        
+    }
+}
+
+@media only screen and (max-width: 555px) {
+
+    .navbarPortionLandDiv {
+        grid-template-columns: 75% 25%;
+    }
+
 }
