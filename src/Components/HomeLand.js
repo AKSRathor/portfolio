@@ -132,7 +132,7 @@ const HomeLand = () => {
       })
     }
 
-    else{
+    else if(window.innerWidth >=400){
       gsap.to(".hiBg", {
         width: "350px",
         repeat: -1,
@@ -154,6 +154,29 @@ const HomeLand = () => {
   
       })
     }
+    else{
+      gsap.to(".hiBg", {
+        width: "300px",
+        repeat: -1,
+        duration: 2
+        // yoyo:true
+  
+  
+  
+      })
+  
+      gsap.to(".namesideBG", {
+        width: "300px",
+        repeat: -1,
+        duration: 2,
+        delay: 1.5,
+        // yoyo:true
+  
+  
+  
+      })
+    }
+
 
     gsap.to(".hiSideLandPage", {
       color: "white",

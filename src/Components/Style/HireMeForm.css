@@ -83,3 +83,30 @@
     margin-left: 93%;
     font-size: 1.5em;
 }
+
+@media only screen and (max-width: 850px) {
+    .hireMeContents{
+        height: 85vh;
+        font-size: 0.8em;
+    }
+
+}
+
+@media only screen and (max-width: 760px) {
+    .hireMeContents{
+        height: 73vh;
+        font-size: 0.7em;
+        width: 82%;
+    }
+    .hireMeInput {
+        
+        width: 25%;
+    }
+    .hireMeInput::placeholder {
+        font-size: 0.8em;
+    }
+    .hireMeSend{
+        font-size: 0.9em;
+    }
+
+}

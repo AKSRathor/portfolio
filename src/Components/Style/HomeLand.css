@@ -358,7 +358,6 @@
 }
 
 @media only screen and (max-width: 960px) {
-
     .onlyNameWithPhoto {
         gap: 50px;
         flex-direction: column-reverse;
@@ -440,6 +439,29 @@
 
     .navbarPortionLandDiv {
         grid-template-columns: 75% 25%;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .allContain{
+        font-size: 0.7em;
+    }
+    .hiBg, .namesideBG{
+        height: 76px;
+    }
+    .LandPageBtns{
+        flex-wrap: wrap;
+    }
+    .cardProjectVirtual{
+        width: 70% !important;
+    }
+    .paraPage2Div{
+        margin-top: 5% auto;
+        font-size: 0.8em;
+    }
+    .navbarPortionLandDiv{
+        grid-template-columns: 70% 30%;
     }
 
 }

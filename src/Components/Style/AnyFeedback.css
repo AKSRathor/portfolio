@@ -60,3 +60,17 @@
     scale: 0;
     opacity: 0;
 }
+
+@media only screen and (max-width: 1400px){
+    .sender-area{
+        right: 171px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .sender-area{
+        right: 123px;
+        width: 81%;
+    }
+
+}
