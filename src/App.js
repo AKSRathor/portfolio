@@ -2,11 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 import HomeLand from './Components/HomeLand';
 import { Analytics } from "@vercel/analytics/react"
+import Chatbot from './Components/Chatbot';
 
 function App() {
   return (
     <div className="App">
-      <Analytics/>
+      {/* <Analytics/> */}
+      <Chatbot/>
       <HomeLand/>
     </div>
   );

@@ -305,45 +305,6 @@
     z-index: -1;
 }
 
-
-.feedBackMan img {
-    width: 45%;
-    border-radius: 13px;
-    cursor: pointer;
-}
-
-.feedBackMan {
-    color: white;
-    text-align: center;
-    position: fixed;
-    width: 11%;
-    right: 3%;
-    bottom: 4%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 6;
-    /* transform: scale(0); */
-    visibility: hidden;
-}
-
-.AnyFeedbackAsk {
-    display: flex;
-    opacity: 0;
-    transform: translateY(5px);
-    background-color: #0f0f0f;
-    width: 100%;
-    border-radius: 7px;
-    height: 5vh;
-    margin-bottom: 4%;
-    padding: 1%;
-    /* text-align: center; */
-    font-size: 0.8em;
-    align-items: center;
-    justify-content: center;
-}
-
 .fmanImg {
 
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
