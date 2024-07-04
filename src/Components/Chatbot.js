@@ -81,7 +81,7 @@ const Chatbot = () => {
         </div>}
         <form onSubmit={handleOnSendQuery} style={{ height: clickBool ? '20%' : "100%", padding: clickBool ? "2%" : "0%" }} className="lowerSendArea">
           <div className='lightningShadowChatinput' style={{display:loadMover?"block":"none"}}></div>
-          <div className="sendInput"><input value={promptText} onChange={handleOnPromptChange} placeholder='What is your qualification' type="text" /></div>
+          <div className="sendInput"><input value={promptText} onChange={handleOnPromptChange} placeholder='What are your qualifications' type="text" /></div>
           <div className="sendButton"><button disabled={gettingResp} style={{fontWeight:"bold", cursor:"pointer", display:"flex", justifyContent:"center", alignItems:"center", gap:"8px"}}> <span>Ask</span> <button className='aiLogoInAsk'></button></button></div>
         </form>
       </div>
