@@ -389,7 +389,7 @@ const HomeLand = () => {
           </div>
           <div className="LandPageBtns">
             <div className="hireMeBtnDiv"><button onMouseOver={handleOnHireOver} onClick={handleOnHireMeClick} onMouseOut={handleOnHireOut} className='landPageBtn hiremeLandPageBtn'>Hire me <i className="fa-solid fa-arrow-right hireArrow"></i></button></div>
-            <a href='https://drive.google.com/file/d/1MzRO0PQeC4wESo5-XwCUrnTRB_cm0b5D/view?usp=sharing' target='_blank' className="DownloadCvLandPageBtnDiv"><button className='landPageBtn downloadLandPageBtn type1'>Download CV</button></a>
+            <a href='https://drive.google.com/file/d/1mw1iCo5qhj6TsPjj16eRp4_GJxblkyH-/view?usp=sharing' target='_blank' className="DownloadCvLandPageBtnDiv"><button className='landPageBtn downloadLandPageBtn type1'>Download CV</button></a>
           </div>
 
         </div>
